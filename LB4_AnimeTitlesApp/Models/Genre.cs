@@ -9,7 +9,5 @@ public partial class Genre
 
     public string GenreName { get; set; } = null!;
 
-
-    // навигационное свойство
     public virtual ICollection<AnimeTitle> AnimeTitles { get; set; } = new List<AnimeTitle>();
 }

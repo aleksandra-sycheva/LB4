@@ -11,8 +11,7 @@ public partial class User
 
     public string LastName { get; set; } = null!;
 
-    public DateOnly DateOfRegistration { get; set; }
+    public DateOnly? DateOfRegistration { get; set; }
 
-    // навигационное свойство
     public virtual ICollection<AnimeTitle> AnimeTitles { get; set; } = new List<AnimeTitle>();
 }

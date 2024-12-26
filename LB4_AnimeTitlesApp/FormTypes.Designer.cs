@@ -66,7 +66,7 @@
             // 
             buttonTypeUpdate.Location = new Point(169, 13);
             buttonTypeUpdate.Name = "buttonTypeUpdate";
-            buttonTypeUpdate.Size = new Size(150, 35);
+            buttonTypeUpdate.Size = new Size(184, 35);
             buttonTypeUpdate.TabIndex = 1;
             buttonTypeUpdate.Text = "Редактировать";
             buttonTypeUpdate.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             // 
             // buttonTypeDelete
             // 
-            buttonTypeDelete.Location = new Point(325, 13);
+            buttonTypeDelete.Location = new Point(359, 13);
             buttonTypeDelete.Name = "buttonTypeDelete";
             buttonTypeDelete.Size = new Size(150, 35);
             buttonTypeDelete.TabIndex = 2;
@@ -102,13 +102,14 @@
             dataGridViewTypes.MultiSelect = false;
             dataGridViewTypes.Name = "dataGridViewTypes";
             dataGridViewTypes.ReadOnly = true;
+            dataGridViewTypes.RowHeadersWidth = 51;
             dataGridViewTypes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewTypes.Size = new Size(1035, 573);
             dataGridViewTypes.TabIndex = 0;
             // 
             // FormTypes
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1055, 654);

@@ -15,11 +15,11 @@ public partial class AnimeTitle
 
     public string OriginalName { get; set; } = null!;
 
-    public string TitleName { get; set; } = null!;
+    public string TitleNme { get; set; } = null!;
 
     public short? YearOfRelese { get; set; }
 
-    public string? Description { get; set; }
+    public string? Decsription { get; set; }
 
     public string? Poster { get; set; }
 
@@ -27,15 +27,13 @@ public partial class AnimeTitle
 
     public short? Duration { get; set; }
 
-    public bool IsComplete { get; set; }
+    public bool IsComlete { get; set; }
 
     public string Studio { get; set; } = null!;
 
-    // навигационные свойства
-    // одному тайтлу соответствует только один тип аниме
-    public virtual AnimeType AnimeType { get; set; } = null!;
+    public virtual AnimeType IdAnimeTypeNavigation { get; set; } = null!;
 
-    public virtual Genre Genre { get; set; } = null!;
+    public virtual Genre IdGenreNavigation { get; set; } = null!;
 
-    public virtual User User { get; set; } = null!;
+    public virtual User IdModeratorNavigation { get; set; } = null!;
 }
